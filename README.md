@@ -1,50 +1,61 @@
-The Python script utilizes Biopython to access the NCBI Nucleotide database and retrieve a DNA sequence using a specified accession number. The user inputs the accession number, and the script fetches the corresponding DNA sequence from NCBI. Employing Biopython's functionalities, the script translates the DNA sequence into a protein sequence, assuming that the provided DNA sequence codes for a protein. The results, including the original DNA sequence, the translated protein sequence.
-
-REPL :- https://replit.com/@himanshucode11?path=&tab=repls
 
 
-```markdown
-# NCBI DNA to Protein Translator
+Reference Video Link which represents procedure without using Biopython :- https://drive.google.com/drive/folders/1IXte-FPeWhGz-fBQxN8FmpGfTRq7YyCZ
+Reference Video Link which represents procedure using Biopython :- https://drive.google.com/drive/folders/1f-pFFYZsE1oJaEYF8J9nf63e84kAXQnw?usp=sharing
 
-## Prerequisites
+## Description
 
-- Python 3.x
-- Biopython library
-- tkinter
-- 
+Biopython, a user-friendly DNA to Protein Converter,
+seamlessly retrieves genetic sequences through accession numbers,integrating with NCBI and BioPython.
+Its advanced ExPASy ProtParam integration offers comprehensive protein parameters,
+enhancing the tool's utility for genetic analysis.
+
+## Features
+
+- DNA and Protein Sequence Retrieval:** Fetch DNA and protein sequences by providing an accession number.
+- Save and Copy Functionality:** Save sequences to a local file and copy them to the clipboard for easy sharing.
+- ExPASy ProtParam Integration:** Obtain crucial protein parameters seamlessly.
+- User-Friendly Interface:** Intuitive design for users of all backgrounds.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+### Prerequisites
+
+Make sure you have the following libraries installed:
+
+- Tkinter: 
+  - Tkinter is usually included with Python installations. If not, you can install it using:
+    ```bash
+    pip install tk
+    ```
+
+- BioPython:
+  - You can install BioPython using:
+    ```bash
+    pip install biopython
+    ```
+
+- Beautiful Soup:
+  - Install Beautiful Soup using:
+    ```bash
+    pip install beautifulsoup4
+    ```
+
+- Requests:
+  - Install Requests using:
+    ```bash
+    pip install requests
+    ```
+
+### Clone the Repository
 
 ```bash
-pip install biopython
-```
-
-## Usage
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/himanshu-commits/Biopython.git
-cd Biopython
-```
-
-2. Run the script:
-
-```bash
-python main.py
-```
-
-3. Enter the NCBI accession number when prompted.
-
-## Results
-
-The script will display the original DNA sequence, the translated protein sequence, and the protein sequence represented in a 3-letter amino acid code.
-
-## Important Note
-
-Ensure to replace "your_email@example.com" in the script with your actual email address. This is necessary for proper interaction with NCBI Entrez utilities.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-```
-
-This description provides more context about the script's purpose and how it can be beneficial for users working with genetic data.
+git clone https://github.com/himanshu-commits/GenoVisor.git
+cd GenoVisor
